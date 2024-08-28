@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calendar UI</title>
+</head>
+<body>
+    <div class="container-fluid calendar-container">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-4 sidebar">
+                <div class="date-display">
+                    <h1>27</h1>
+                    <h4>THURSDAY</h4>
+                </div>
+                <div class="events">
+                    <h5>Current Events</h5>
+                    <ul>
+                        <li>Day 09 Daily CSS Image</li>
+                    </ul>
+                    <a href="#">See past events</a>
+                </div>
+                <button class="btn btn-create-event">Create an Event</button>
+            </div>
+
+            <!-- Calendar -->
+            <div class="col-md-8 calendar">
+                <div class="calendar-header">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="./index.html">Jan</a></li>
+                        <li class="list-inline-item"><a href="./feb.html">Feb</a></li>
+                        <li class="list-inline-item"><a href="./Mar.html">Mar</a></li>
+                        <li class="list-inline-item"><a href="./Apr.html" class="active">Apr</a></li>
+                        <li class="list-inline-item"><a href="./May.html">May</a></li>
+                        <li class="list-inline-item"><a href="./Jun.html">Jun</a></li>
+                        <li class="list-inline-item"><a href="./july.html">Jul</a></li>
+                        <li class="list-inline-item"><a href="./aug.html">Aug</a></li>
+                        <li class="list-inline-item"><a href="./sep.html">Sep</a></li>
+                        <li class="list-inline-item"><a href="./oct.html">Oct</a></li>
+                        <li class="list-inline-item"><a href="./nov.html">Nov</a></li>
+                        <li class="list-inline-item"><a href="./dec.html">Dec</a></li>
+                    </ul>
+                    <div class="year-selector">
+                        <a href="#">&lt;</a>
+                        <span>2024</span>
+                        <a href="#">&gt;</a>
+                    </div>
+                </div>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>SUN</th>
+                            <th>MON</th>
+                            <th>TUE</th>
+                            <th>WED</th>
+                            <th>THU</th>
+                            <th>FRI</th>
+                            <th>SAT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="inactive">26</td>
+                            <td class="inactive">27</td>
+                            <td class="inactive">28</td>
+                            <td class="inactive">29</td>
+                            <td class="inactive">30</td>
+                            <td class="inactive">31</td>
+                            <td>01</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>03</td>
+                            <td>04</td>
+                            <td>05</td>
+                            <td>06</td>
+                            <td>07</td>
+                            <td>08</td>
+                        </tr>
+                        <tr>
+                            <td>09</td>
+                            <td>10</td>
+                            <td>11 <span class="event-dot"></span></td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td class="selected">27 <span class="event-dot"></span></td>
+                            <td>28</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td class="inactive">01</td>
+                            <td class="inactive">02</td>
+                            <td class="inactive">03</td>
+                            <td class="inactive">04</td>
+                            <td class="inactive">05</td>
+                            <td class="inactive">06</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
